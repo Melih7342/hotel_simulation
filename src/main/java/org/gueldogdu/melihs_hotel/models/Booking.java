@@ -1,12 +1,11 @@
 package org.gueldogdu.melihs_hotel.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.gueldogdu.melihs_hotel.enums.BookingStatus;
+
 import java.time.LocalDate;
 
 @Entity
@@ -20,7 +19,12 @@ public class Booking {
 
     private Long hotelId;
     private Long roomId;
+
     private LocalDate checkInDate;
     private LocalDate checkOutDate;
+
+    @Enumerated(EnumType.STRING)
+    private BookingStatus status;
+
     private String guestName;
 }
