@@ -2,7 +2,7 @@ package org.gueldogdu.melihs_hotel.services;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.gueldogdu.melihs_hotel.HotelNotFoundException;
+import org.gueldogdu.melihs_hotel.exceptions.HotelNotFoundException;
 import org.gueldogdu.melihs_hotel.models.Hotel;
 import org.gueldogdu.melihs_hotel.repositories.HotelRepository;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package org.gueldogdu.melihs_hotel;
+package org.gueldogdu.melihs_hotel.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

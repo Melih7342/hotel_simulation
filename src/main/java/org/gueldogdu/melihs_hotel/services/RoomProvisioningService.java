@@ -1,7 +1,7 @@
 package org.gueldogdu.melihs_hotel.services;
 
 import lombok.RequiredArgsConstructor;
-import org.gueldogdu.melihs_hotel.HotelNotFoundException;
+import org.gueldogdu.melihs_hotel.exceptions.HotelNotFoundException;
 import org.gueldogdu.melihs_hotel.models.Hotel;
 import org.gueldogdu.melihs_hotel.models.Room;
 import org.gueldogdu.melihs_hotel.repositories.HotelRepository;
