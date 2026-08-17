@@ -17,7 +17,7 @@ public class BookingService {
     private final BookingRepository  bookingRepository;
 
     @Transactional
-    public Booking createBooking(Long hotelId, Long roomId, LocalDate requestedCheckIn, LocalDate requestedCheckOut) {
+    public Booking createBooking(Long hotelId, Long roomId, LocalDate requestedCheckIn, LocalDate requestedCheckOut, String guestName) {
         List<Booking> overlappingBookings = bookingRepository.findOverlappingBookings(roomId, requestedCheckIn, requestedCheckOut);
 
         if (!overlappingBookings.isEmpty()) {
@@ -29,6 +29,7 @@ public class BookingService {
         booking.setCheckInDate(requestedCheckIn);
         booking.setCheckOutDate(requestedCheckOut);
         booking.setStatus(BookingStatus.CONFIRMED);
+        booking.setGuestName(guestName);
         bookingRepository.save(booking);
 
         return booking;

@@ -24,4 +24,7 @@ public class BookingRequestDTO {
     @Future(message = "The checkout date must be in the future")
     private LocalDate checkOutDate;
 
+    @NotNull(message = "Please provide your name")
+    private String guestName;
+
 }
