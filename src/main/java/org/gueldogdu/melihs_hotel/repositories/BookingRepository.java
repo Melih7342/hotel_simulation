@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface BookingRepository extends JpaRepository<Booking, Long> {
     @Query("""
-        SELECT b FROM Booking
+        SELECT b FROM Booking b
         WHERE b.roomId = :roomId
             AND b.status != 'CANCELLED'
             AND b.checkInDate < :requestedCheckOut
