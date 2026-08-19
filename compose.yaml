@@ -1,1 +1,11 @@
-services: { }
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: hotel_postgres
+    environment:
+      POSTGRES_USER: hotel_admin
+      POSTGRES_PASSWORD: Password!
+      POSTGRES_DB: hoteldb
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
