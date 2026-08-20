@@ -18,7 +18,7 @@ func sendBooking(request BookingRequest) error {
 	bodyReader := bytes.NewBuffer(jsonRequest)
 
 	// 3. Request
-	response, err := http.Post("http://localhost:8080/booking", "application/json", bodyReader)
+	response, err := http.Post("http://localhost:8080/book", "application/json", bodyReader)
 	if err != nil {
 		return err
 	}
