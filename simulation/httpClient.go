@@ -23,4 +23,5 @@ func sendBooking(request BookingRequest) error {
 
 	defer response.Body.Close()
 
+	return nil
 }
