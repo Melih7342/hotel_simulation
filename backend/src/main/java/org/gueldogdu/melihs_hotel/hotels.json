@@ -1,0 +1,47 @@
+[
+  {
+    "hotelId": 1,
+    "name": "Spencer Mansion Resort",
+    "country": "USA",
+    "city": "Arklay Mountains",
+    "type": "Luxury",
+    "floors": 3,
+    "roomAmount": 15
+  },
+  {
+    "hotelId": 2,
+    "name": "Grand Hotel Vienna",
+    "country": "Austria",
+    "city": "Vienna",
+    "type": "Business",
+    "floors": 7,
+    "roomAmount": 200
+  },
+  {
+    "hotelId": 3,
+    "name": "Raccoon City Motel",
+    "country": "USA",
+    "city": "Raccoon City",
+    "type": "Budget",
+    "floors": 2,
+    "roomAmount": 40
+  },
+  {
+    "hotelId": 4,
+    "name": "The Continental",
+    "country": "USA",
+    "city": "New York",
+    "type": "Premium",
+    "floors": 15,
+    "roomAmount": 80
+  },
+  {
+    "hotelId": 5,
+    "name": "Capsule-Hotel Neo-Tokyo",
+    "country": "Japan",
+    "city": "Tokyo",
+    "type": "Micro",
+    "floors": 20,
+    "roomAmount": 500
+  }
+]

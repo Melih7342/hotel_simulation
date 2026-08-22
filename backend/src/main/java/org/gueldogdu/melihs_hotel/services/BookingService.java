@@ -18,7 +18,7 @@ public class BookingService {
 
     @Transactional
     public Booking createBooking(Long hotelId, Long roomId, LocalDate requestedCheckIn, LocalDate requestedCheckOut, String guestName) {
-        List<Booking> overlappingBookings = bookingRepository.findOverlappingBookings(roomId, requestedCheckIn, requestedCheckOut);
+        List<Booking> overlappingBookings = bookingRepository.findOverlappingBookings(hotelId, roomId, requestedCheckIn, requestedCheckOut);
 
         if (!overlappingBookings.isEmpty()) {
             throw new RoomAlreadyBookedException(roomId, requestedCheckIn, requestedCheckOut);

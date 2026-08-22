@@ -16,7 +16,7 @@ public class Hotel {
     private String name;
     private String country;
     private String city;
-    private String motto;
+    private String type;
     private int floors;
     private int roomAmount;
 
@@ -24,7 +24,7 @@ public class Hotel {
         this.name = name;
         this.country = country;
         this.city = city;
-        this.motto = motto;
+        this.type = motto;
         this.floors = floors;
     }
 }
