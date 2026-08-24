@@ -23,4 +23,8 @@ public interface BookingRepository extends JpaRepository<Booking, Long> {
             @Param("requestedCheckIn") LocalDate checkIn,
             @Param("requestedCheckOut") LocalDate checkOut
     );
+
+    void findByBookingId(Long bookingId);
+
+    void deleteBookingByBookingId(Long bookingId);
 }

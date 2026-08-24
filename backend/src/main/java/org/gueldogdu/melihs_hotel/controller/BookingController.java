@@ -12,11 +12,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/book")
 public class BookingController {
     private final BookingService bookingService;
 
-    @PostMapping
+    @PostMapping("/book")
     public ResponseEntity<BookingResponseDTO> createBooking(@Valid @RequestBody BookingRequestDTO bookingRequestDTO){
         Booking booking = bookingService.createBooking(
                 bookingRequestDTO.getHotelId(),
@@ -34,5 +33,17 @@ public class BookingController {
                 .message(String.format("Room %d successfully reserved for %s from %s to %s.", booking.getRoomId(), booking.getCheckInDate(), booking.getCheckOutDate(), booking.getGuestName()))
                 .build();
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
+    }
+
+    @DeleteMapping("/cancel/{id}")
+    public ResponseEntity<Void> deleteBooking(@PathVariable Long id){
+        boolean deleted = bookingService.cancelBooking(id);
+
+        if(deleted){
+            return ResponseEntity.noContent().build();
+        }
+        else  {
+            return ResponseEntity.notFound().build();
+        }
     }
 }

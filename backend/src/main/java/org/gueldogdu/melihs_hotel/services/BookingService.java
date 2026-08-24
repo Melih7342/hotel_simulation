@@ -34,4 +34,12 @@ public class BookingService {
 
         return booking;
     }
+
+    public boolean cancelBooking(Long bookingId) {
+        bookingRepository.deleteById(bookingId);
+
+        return !bookingRepository.existsById(bookingId);
+    }
+
+
 }

@@ -23,13 +23,4 @@ public class HotelService {
 
         hotel.setName(newName);
     }
-
-    @Transactional
-    public void changeMotto(Long id, String newMotto) {
-        Hotel hotel = hotelRepository.findById(id)
-                .orElseThrow(() -> new HotelNotFoundException(id));
-
-        hotel.setMotto(newMotto);
-    }
-
 }

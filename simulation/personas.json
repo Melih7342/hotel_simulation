@@ -1,6 +1,5 @@
 [
   {
-    "id": "gov_leon",
     "name": "Leon Kennedy",
     "weight": 80,
     "minStayDays": 1,
@@ -9,7 +8,6 @@
     "cancelProbability": 0.05
   },
   {
-    "id": "search_claire",
     "name": "Claire Redfield",
     "weight": 60,
     "minStayDays": 2,
@@ -18,7 +16,6 @@
     "cancelProbability": 0.10
   },
   {
-    "id": "sidekick_sancho",
     "name": "Sancho Panza",
     "weight": 50,
     "minStayDays": 4,
@@ -27,7 +24,6 @@
     "cancelProbability": 0.05
   },
   {
-    "id": "chaos_quijote",
     "name": "Don Quijote",
     "weight": 30,
     "minStayDays": 1,
@@ -36,7 +32,6 @@
     "cancelProbability": 0.85
   },
   {
-    "id": "magic_illyana",
     "name": "Magik",
     "weight": 20,
     "minStayDays": 1,
@@ -45,7 +40,6 @@
     "cancelProbability": 0.70
   },
   {
-    "id": "worker_chihiro",
     "name": "Chihiro",
     "weight": 40,
     "minStayDays": 3,
@@ -54,7 +48,6 @@
     "cancelProbability": 0.02
   },
   {
-    "id": "cursed_sophie",
     "name": "Sophie",
     "weight": 45,
     "minStayDays": 5,
@@ -63,7 +56,6 @@
     "cancelProbability": 0.05
   },
   {
-    "id": "doc_strange",
     "name": "Dr. Strange",
     "weight": 35,
     "minStayDays": 1,
@@ -72,7 +64,6 @@
     "cancelProbability": 0.40
   },
   {
-    "id": "broke_peter",
     "name": "Peter Parker",
     "weight": 70,
     "minStayDays": 1,
@@ -81,7 +72,6 @@
     "cancelProbability": 0.75
   },
   {
-    "id": "rich_bruce",
     "name": "Bruce Wayne",
     "weight": 25,
     "minStayDays": 3,
@@ -90,7 +80,6 @@
     "cancelProbability": 0.01
   },
   {
-    "id": "lit_goethe",
     "name": "Goethe",
     "weight": 15,
     "minStayDays": 14,
@@ -99,7 +88,6 @@
     "cancelProbability": 0.05
   },
   {
-    "id": "lit_nietzsche",
     "name": "Nietzsche",
     "weight": 10,
     "minStayDays": 5,
@@ -108,7 +96,6 @@
     "cancelProbability": 0.60
   },
   {
-    "id": "hero_nightwing",
     "name": "Nightwing",
     "weight": 65,
     "minStayDays": 1,
@@ -117,7 +104,6 @@
     "cancelProbability": 0.30
   },
   {
-    "id": "pilot_porco",
     "name": "Porco Rosso",
     "weight": 40,
     "minStayDays": 2,
@@ -126,7 +112,6 @@
     "cancelProbability": 0.15
   },
   {
-    "id": "delivery_kiki",
     "name": "Kiki",
     "weight": 55,
     "minStayDays": 7,
@@ -135,7 +120,6 @@
     "cancelProbability": 0.02
   },
   {
-    "id": "thief_felicia",
     "name": "Black Cat",
     "weight": 45,
     "minStayDays": 1,
@@ -144,7 +128,6 @@
     "cancelProbability": 0.80
   },
   {
-    "id": "reporter_clark",
     "name": "Clark Kent",
     "weight": 60,
     "minStayDays": 1,
@@ -153,7 +136,6 @@
     "cancelProbability": 0.50
   },
   {
-    "id": "spy_ada",
     "name": "Ada Wong",
     "weight": 50,
     "minStayDays": 1,
@@ -162,7 +144,6 @@
     "cancelProbability": 0.90
   },
   {
-    "id": "lost_ethan",
     "name": "Ethan Winters",
     "weight": 55,
     "minStayDays": 1,
@@ -171,7 +152,6 @@
     "cancelProbability": 0.20
   },
   {
-    "id": "secret_mia",
     "name": "Mia Winters",
     "weight": 30,
     "minStayDays": 3,
@@ -180,7 +160,6 @@
     "cancelProbability": 0.40
   },
   {
-    "id": "wild_san",
     "name": "Prinzessin Mononoke",
     "weight": 5,
     "minStayDays": 1,
